@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700&display=swap');
+
+    *{
+    font-family: 'Noto Serif KR', serif;
+}
+</style>
+
+<script>
+    'use strict'           
+    let timeId= null; 
+    
+    function printTime(){
+        const date= new Date();
+        const hh= date.getHours();
+        const mm= date.getMinutes();
+        const ss= date.getSeconds();
+
+        document.getElementById("result").innerHTML = hh+":"+mm+":"+ss
+    }
+    function startClock(){
+        timeId=setInterval(printTime,1000)
+
+    }
+
+        timeId=setInterval(printTime,1000)
+
+
+    function stopClock(){
+        clearInterval(timeId)
+    }
+
+</script>
+<body>
+<div class="wrapper">
+    <p><a href="#"><img src="./img/homepage.png" alt="home"></a></p>
+    <div class="clork"><div id="result"></div>
+<input type="button" onclick="startClock()" value="시작"></input>
+<input type="button" onclick="stopClock()" value="멈춤"></input></div>
+    <h1>김선경의 홈페이지에 오신 것을 환영합니다</h1>
+    <table align="center">
+        <colgroup>
+        <col width="150">
+        <col width="200">
+    </colgroup>
+        <th colspan="2">❤ 과제 ❤</th>
+        <tr>
+            <td align="right">이력서</td>
+            <td align="center"><p><a href="./pages/resume.html"><img src="./img/resume.png" alt="resume"></a></p>
+            </td>
+        </tr>
+        <tr>
+            <td align="right">즐겨찾기</td>
+            <td align="center"><a href="./pages/favorite.html"><img src="./img/favorite.png" alt="favorite"></a><p></p></td>
+        </tr>
+        <tr>
+            <td align="right">NEWS</td>
+            <td align="center"><a href="./pages/news1.html"><img src="./img/news.png" alt="news1"></a><p></p></td>
+        </tr>
+        <tr>
+            <td align="right">Market</td>
+            <td align="center"><a href="./pages/market.html"><img src="./img/market.png" alt="news1"></a><p></p></td>
+        </tr>
+        <tr>
+            <td align="right">회원가입<b>(new!)</b></td>
+            <td align="center"><a href="./pages/login.html"><img src="./img/login.png" alt="news1"></a><p></p></td>
+        </tr>        
+        <tr>
+            <td align="right">미디어쿼리</td>
+            <td align="center"><a href="./pages/11_미디어쿼리2.html"><img src="./img/favorite.png" alt="news1"></a><p></p></td>
+        </tr>
+        <tr>
+            <td align="right">Tourlist In Tour</td>
+            <td align="center"><a href="./pages/guide.html"><img src="./img/tour.png" alt="news1"></a><p></p></td>
+        </tr>
+        <tr>
+            <td align="right">클론코딩(메인)</td>
+            <td align="center"><a href="./pages/main.html"><img src="./img/clone.png" alt="news1"></a><p></p></td>
+        </tr>
+        <tr>
+            <td align="right">주민등록번호검사</td>
+            <td align="center"><a href="./pages/homework1.html"><img src="./img/ssn.png" alt="news1"></a><p></p></td>
+        </tr>
+    </table>
+<div class="catwalk">
+    <img src="/img/cat1.png" alt="cat"></div>
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    width: 100%;
+}
+.header{
+    background-color: black;
+    width:100%
+}
+.nav>ul{
+    height: 50px;
+    margin: 0;
+    list-style: none;
+    color:white
+}
+
+.nav>ul>li{
+    float: left;
+    padding: 10px;
+    margin: 5px 5px;
+}
+
+/*구형폰: 320px*/
+
+.nav, #contents{
+    width: 380px;
+    margin: 0 auto;
+
+}
+
+.nav>ul{
+    font-size: 12px;
+}
+
+#intro{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#intro > img{
+    width:100%;
+    padding:10px;
+}
+
+#desc{
+    width: 100%;
+    padding: 10px;
+    line-height: 1.5;
+    font-size:16px;
+}
+
+#footer{
+    width: 100%;
+    height: 50px;
+    padding: 20px;
+    background-color: black;
+    color:white;
+}
+
+#footer >p{
+    text-align: center;
+    line-height: 10px;
+}
+
+/* 테블릿: 768px~*/
+
+@media screen and (min-width: 768px){
+    .nav, #contents{
+        width: 750px;
+        margin:0 auto;
+    }
+
+    #intro{
+        width:100%
+    }
+    #intro> img{
+        width: 20%;
+        padding: 10px;
+    }
+    #desc{
+        width: 100%;
+        padding:10px;
+        margin: 10px auto;
+    }
+    #footer{
+        height: 70px;
+        padding: 30px;
+        background-color: grey;
+    }
+
+}
+
+/* 데스크탑 사이즈 1024px~*/
+
+@media screen and (min-width: 1024px){
+    #container{
+        background-color: rgb(212, 212, 212);
+    }
+    .header{
+        background-color: white;
+        border-bottom: 3px solid rgb(0, 102, 255);
+    }
+    .nav{
+        display: flex;
+        justify-content: space-around;
+        background-color: white;
+    }
+    .nav>ul>li{
+        font-size: 1.6rem;
+        color:rgb(0, 63, 156)
+    }
+ #contents{
+    width: 1000px;
+    margin:0 auto;
+ }
+    #intro{
+        width:100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    #intro> img{
+        width: 20%;
+        padding: 10px;
+        
+    }
+    #desc{
+        width: 100%;
+        padding:10px;
+        margin: 10px auto;
+    }
+    #footer{
+        height: 70px;
+        padding: 30px;
+        background-color:rgb(0, 102, 255);
+        color:black;
+        font-size: 1.2rem;
+    }
+}

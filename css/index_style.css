@@ -1,0 +1,66 @@
+
+
+
+body{
+    background-color: linen;
+
+}
+p{
+    text-align: center;
+    
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+table{
+    background-color: cadetblue; color:floralwhite; border-radius: 10px;
+}
+
+.wrapper{
+    position:relative;
+    width:100%;
+}
+.catwalk{
+    position:fixed;
+    bottom:5px;
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+        margin-left: 0px;
+    }
+    to{
+        transform: rotate(20deg);
+        margin-left: 100px;
+    }
+}
+
+.clork{
+    position:fixed;
+    right: 10px;
+    top: 20px;
+}
+
+input[type="button"]{
+    background-color: cadetblue;
+    color:white;
+    border:1px dotted white;
+    border-radius: 5px;
+
+}
+
+#result{
+    border:1px solid white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+b{
+    color:red;
+}

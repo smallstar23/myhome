@@ -1,0 +1,15 @@
+div{
+    width: 1000px;
+    margin: 0 auto;
+    background-color:rgb(219, 208, 219);
+    
+}
+
+table{
+    border-collapse: collapse;
+    border:1px solid rgb(85, 55, 85);
+}
+
+td, th{
+    border: 1px solid rgb(85, 55, 85);
+}

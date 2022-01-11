@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h2>주민등록번호 유효성 검사</h2>
+<body>
+    <script>
+        'use strict';
+        let str=prompt('주민등록번호를 입력하세요');
+        let arr=[];
+        for(let i=0; i<=str.length; i++){
+            arr[i]=Number(str.charAt(i));
+        } 
+        let add=[2,3,4,5,6,7,8,9,2,3,4,5,1];
+        for(let j=0; j<=add.length; j++){
+            arr[j] = arr[j] * add[j]
+        }
+        function sum(){
+            let total=0;
+            for(let a=0; a<=arr.length-3; a++){
+                total += arr[a]
+            }
+            return total;
+        }
+
+        let final=11 - (sum() % 11)
+        if(final>=10){
+            final = final % 10
+        }
+
+        console.log(arr);
+        console.log(final);
+
+        if(final==arr[12]){
+            document.write('유효한 주민등록번호입니다.')
+        }else(document.write('유효하지 않습니다!'))
+
+    </script>
+</body>
+</html>
